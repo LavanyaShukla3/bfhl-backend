@@ -12,6 +12,6 @@
   "description": "",
   "dependencies": {
     "express": "^4.19.2",
-    "cors": "^2.8.5"  // Ensure cors is listed here
+    "cors": "^2.8.5" 
   }
 }
