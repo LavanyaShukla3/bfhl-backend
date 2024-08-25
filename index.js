@@ -1,9 +1,9 @@
 const express = require('express');
-const cors = require('cors');
+const cors = require('cors');  // Add this line
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.use(cors()); // Enable CORS for all routes
+app.use(cors());  // Add this line to use CORS middleware
 app.use(express.json()); // Middleware to parse JSON request bodies
 
 // Start the server
@@ -33,9 +33,9 @@ app.post('/bfhl', (req, res) => {
   // Respond with the filtered data and user information
   res.json({
     is_success: true,
-    user_id: "lavanya", // Replace with your actual user_id
+    user_id: "your_full_name_ddmmyyyy", // Replace with your actual user_id
     email: "your_email@college.com",    // Replace with your actual email
-    roll_number: "21BCE6068",      // Replace with your actual roll number
+    roll_number: "YourRollNumber",      // Replace with your actual roll number
     numbers,
     alphabets,
     highest_lowercase_alphabet: highestLowercaseAlphabet
